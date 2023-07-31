@@ -98,134 +98,134 @@ export const ColorResistance = () => {
             4 Band Resistor Color Code Calculator
           </h1>
         </div>
-        <div className="grid grid-cols-4 pt-20">
-          <div className="col-span-3 flex justify-center relative ">
-            <div className="">
+        <div className="grid grid-cols-3 p-20 gap-2">
+          <div className="col-span-2 justify-center ">
+            <div className="relative">
               <img
-                className="h-32"
+                className="h-48"
                 src={'./assets/img/resistor.png'}
                 alt="resistor"
               />
-            </div>
-            <div className="absolute float-left left-64 top-0 z-50">
-              <div
-                className={` ${
-                  firstBand == 0
-                    ? 'bg-slate-900 h-32 w-8'
-                    : firstBand == 1
-                    ? 'bg-amber-900 h-32 w-8'
-                    : firstBand == 2
-                    ? 'bg-red-600 h-32 w-8'
-                    : firstBand == 3
-                    ? 'bg-orange-700 h-32 w-8'
-                    : firstBand == 4
-                    ? 'bg-yellow-400 h-32 w-8'
-                    : firstBand == 5
-                    ? 'bg-green-700 h-32 w-8'
-                    : firstBand == 6
-                    ? 'bg-blue-700 h-32 w-8'
-                    : firstBand == 7
-                    ? 'bg-violet-600 h-32 w-8'
-                    : firstBand == 8
-                    ? 'bg-gray-600 h-32 w-8'
-                    : firstBand == 9
-                    ? 'bg-white h-32 w-8'
-                    : 'bg-slate-500 h-32 w-8'
-                } `}
-              ></div>
-            </div>
-            <div className="absolute float-left left-72 pl-10 top-4 z-50">
-              <div
-                className={` ${
-                  secondBand == 0
-                    ? 'bg-slate-900 h-[93px] w-8'
-                    : secondBand == 1
-                    ? 'bg-amber-900 h-[93px] w-8'
-                    : secondBand == 2
-                    ? 'bg-red-600 h-[93px] w-8'
-                    : secondBand == 3
-                    ? 'bg-orange-700 h-[93px] w-8'
-                    : secondBand == 4
-                    ? 'bg-yellow-400 h-[93px] w-8'
-                    : secondBand == 5
-                    ? 'bg-green-700 h-[93px] w-8'
-                    : secondBand == 6
-                    ? 'bg-blue-700 h-[93px] w-8'
-                    : secondBand == 7
-                    ? 'bg-violet-600 h-[93px] w-8'
-                    : secondBand == 8
-                    ? 'bg-gray-600 h-[93px] w-8'
-                    : secondBand == 9
-                    ? 'bg-white tolerance w-8'
-                    : 'bg-slate-500 h-[93px] w-8'
-                } `}
-              ></div>
-            </div>
-            <div className="absolute float-left left-96 pl-20 top-4 z-50">
-              <div
-                className={` ${
-                  multiplier == 0.001
-                    ? 'bg-pink-400 h-[93px]  w-8'
-                    : multiplier == 0.01
-                    ? 'bg-slate-400 h-[93px]  w-8'
-                    : multiplier == 0.1
-                    ? 'bg-yellow-400 h-[93px]  w-8'
-                    : multiplier == 1
-                    ? 'bg-black h-[93px]  w-8'
-                    : multiplier == 10
-                    ? 'bg-amber-900 h-[93px] w-8'
-                    : multiplier == 100
-                    ? 'bg-red-600 h-[93px]  w-8'
-                    : multiplier == 1000
-                    ? 'bg-orange-400 h-[93px]  w-8'
-                    : multiplier == 10000
-                    ? 'bg-yellow-200 h-[93px]  w-8'
-                    : multiplier == 100000
-                    ? 'bg-green-500 h-[93px]  w-8'
-                    : multiplier == 1000000
-                    ? 'bg-blue-700 h-[93px]  w-8'
-                    : multiplier == 10000000
-                    ? 'bg-violet-700 h-[93px]  w-8'
-                    : multiplier == 100000000
-                    ? 'bg-gray-500 h-[93px]  w-8'
-                    : multiplier == 1000000000
-                    ? 'bg-white h-[93px]  w-8'
-                    : 'bg-slate-500 h-[93px]  w-8'
-                } `}
-              ></div>
-            </div>
-            <div className="absolute float-right right-64 pl-20 top-0 z-50">
-              <div
-                className={` ${
-                  tolerance == 1000
-                    ? 'bg-pink-400 h-32 w-8'
-                    : tolerance == 10
-                    ? 'bg-slate-400 h-32 w-8'
-                    : tolerance == 5
-                    ? 'bg-yellow-400 h-32 w-8'
-                    : tolerance == 10000
-                    ? 'bg-black h-32 w-8'
-                    : tolerance == 1
-                    ? 'bg-amber-900 h-32 w-8'
-                    : tolerance == 2
-                    ? 'bg-red-600 h-32 w-8'
-                    : tolerance == 0.005
-                    ? 'bg-orange-400 h-32 w-8'
-                    : tolerance == 0.02
-                    ? 'bg-yellow-200 h-32 w-8'
-                    : tolerance == 0.5
-                    ? 'bg-green-500 h-32 w-8'
-                    : tolerance == 0.2
-                    ? 'bg-blue-700 h-32 w-8'
-                    : tolerance == 0.1
-                    ? 'bg-violet-700 h-32 w-8'
-                    : tolerance == 0.01
-                    ? 'bg-gray-500 h-32 w-8'
-                    : tolerance == 1000
-                    ? 'bg-white h-32 w-8'
-                    : 'bg-slate-500 h-32 w-8'
-                } `}
-              ></div>
+              <div className="absolute left-20 top-0">
+                <div
+                  className={` ${
+                    firstBand == 0
+                      ? 'bg-slate-900 h-48 w-8'
+                      : firstBand == 1
+                      ? 'bg-amber-900 h-48 w-8'
+                      : firstBand == 2
+                      ? 'bg-red-600 h-48 w-8'
+                      : firstBand == 3
+                      ? 'bg-orange-700 h-48 w-8'
+                      : firstBand == 4
+                      ? 'bg-yellow-400 h-48 w-8'
+                      : firstBand == 5
+                      ? 'bg-green-700 h-48 w-8'
+                      : firstBand == 6
+                      ? 'bg-blue-700 h-48 w-8'
+                      : firstBand == 7
+                      ? 'bg-violet-600 h-48 w-8'
+                      : firstBand == 8
+                      ? 'bg-gray-600 h-48 w-8'
+                      : firstBand == 9
+                      ? 'bg-white h-48 w-8'
+                      : 'bg-slate-500 h-48 w-8'
+                  } `}
+                ></div>
+              </div>
+              <div className="absolute left-64 top-8">
+                <div
+                  className={` ${
+                    secondBand == 0
+                      ? 'bg-slate-900 h-[130px] w-8'
+                      : secondBand == 1
+                      ? 'bg-amber-900 h-[130px] w-8'
+                      : secondBand == 2
+                      ? 'bg-red-600 h-[130px] w-8'
+                      : secondBand == 3
+                      ? 'bg-orange-700 h-[130px] w-8'
+                      : secondBand == 4
+                      ? 'bg-yellow-400 h-[130px] w-8'
+                      : secondBand == 5
+                      ? 'bg-green-700 h-[130px] w-8'
+                      : secondBand == 6
+                      ? 'bg-blue-700 h-[130px] w-8'
+                      : secondBand == 7
+                      ? 'bg-violet-600 h-[130px] w-8'
+                      : secondBand == 8
+                      ? 'bg-gray-600 h-[130px] w-8'
+                      : secondBand == 9
+                      ? 'bg-white tolerance w-8'
+                      : 'bg-slate-500 h-[130px] w-8'
+                  } `}
+                ></div>
+              </div>
+              <div className="absolute left-96 top-8">
+                <div
+                  className={` ${
+                    multiplier == 0.001
+                      ? 'bg-pink-400 h-[130px]  w-8'
+                      : multiplier == 0.01
+                      ? 'bg-slate-400 h-[130px]  w-8'
+                      : multiplier == 0.1
+                      ? 'bg-yellow-400 h-[130px]  w-8'
+                      : multiplier == 1
+                      ? 'bg-black h-[130px]  w-8'
+                      : multiplier == 10
+                      ? 'bg-amber-900 h-[130px] w-8'
+                      : multiplier == 100
+                      ? 'bg-red-600 h-[130px]  w-8'
+                      : multiplier == 1000
+                      ? 'bg-orange-400 h-[130px]  w-8'
+                      : multiplier == 10000
+                      ? 'bg-yellow-200 h-[130px]  w-8'
+                      : multiplier == 100000
+                      ? 'bg-green-500 h-[130px]  w-8'
+                      : multiplier == 1000000
+                      ? 'bg-blue-700 h-[130px]  w-8'
+                      : multiplier == 10000000
+                      ? 'bg-violet-700 h-[130px]  w-8'
+                      : multiplier == 100000000
+                      ? 'bg-gray-500 h-[130px]  w-8'
+                      : multiplier == 1000000000
+                      ? 'bg-white h-[130px]  w-8'
+                      : 'bg-slate-500 h-[130px]  w-8'
+                  } `}
+                ></div>
+              </div>
+              <div className="absolute right-96 top-0 mr-14">
+                <div
+                  className={` ${
+                    tolerance == 1000
+                      ? 'bg-pink-400 h-48 w-8'
+                      : tolerance == 10
+                      ? 'bg-slate-400 h-48 w-8'
+                      : tolerance == 5
+                      ? 'bg-yellow-400 h-48 w-8'
+                      : tolerance == 10000
+                      ? 'bg-black h-48 w-8'
+                      : tolerance == 1
+                      ? 'bg-amber-900 h-48 w-8'
+                      : tolerance == 2
+                      ? 'bg-red-600 h-48 w-8'
+                      : tolerance == 0.005
+                      ? 'bg-orange-400 h-48 w-8'
+                      : tolerance == 0.02
+                      ? 'bg-yellow-200 h-48 w-8'
+                      : tolerance == 0.5
+                      ? 'bg-green-500 h-48 w-8'
+                      : tolerance == 0.2
+                      ? 'bg-blue-700 h-48 w-8'
+                      : tolerance == 0.1
+                      ? 'bg-violet-700 h-48 w-8'
+                      : tolerance == 0.01
+                      ? 'bg-gray-500 h-48 w-8'
+                      : tolerance == 1000
+                      ? 'bg-white h-48 w-8'
+                      : 'bg-slate-500 h-48 w-8'
+                  } `}
+                ></div>
+              </div>
             </div>
           </div>
           <div className="w-full justify-center items-center">
