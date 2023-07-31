@@ -1,24 +1,74 @@
 
+# Setting Up
 
-# enroute-test
+**Clone the repository to your local machine using Git:**
 
-This project was generated using [Nx](https://nx.dev).
+> Copy code
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="150"></p>
+> `git clone https://github.com/ReguloCaroDev19/enroute-test.git`
 
-🔎 **Smart, Fast and Extensible Build System**
+**Navigate to the project directory:**
 
 
-Prerequisites
+>Copy code
 
-Node 16.15.0
+> `cd my-repo`
 
-## Install
+**Install project dependencies using Yarn:**
 
-On the main folder, use the command `yarn install` to get all the packages for both projects
 
-## Run application
+> Copy code
 
-Use the command `yarn start` this command will run both projects at the same time in local enviroment and you can see the frontend at 
->http://localhost:4200/
+> `yarn install`
 
+**Compiling the Application**
+
+To compile my application, run:
+
+>Copy code
+
+> `yarn build`
+
+This command will build the **production-ready** version of the application and create the necessary files in the output directory (usually named build or dist).
+
+  
+
+**Running the Application**
+
+To run the application in development mode (with hot-reloading), use:
+
+>Copy code
+
+> `yarn start`
+
+The above command will start the development server, and you can access my application at http://localhost:4200.
+
+  
+
+To run the production build of my application locally, use:
+
+>Copy code
+
+> `yarn serve`
+
+This command serves the production build and can be used for testing how the application performs in a production-like environment.
+
+  
+
+Additional Command
+
+To run tests, use:
+
+>Copy code
+
+> `yarn test`
+
+If you encounter issues or want to start fresh, you can clean the project and reinstall the dependencies:
+
+>Copy code
+
+> `yarn clean`
+
+> `yarn install`
+
+This will remove the generated build files and node_modules directory before reinstalling the dependencies.
