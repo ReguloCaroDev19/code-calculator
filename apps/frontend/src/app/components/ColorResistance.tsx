@@ -193,7 +193,7 @@ export const ColorResistance = () => {
                   } `}
                 ></div>
               </div>
-              <div className="absolute right-96 top-0 mr-14">
+              <div className="absolute left-[700px] top-0">
                 <div
                   className={` ${
                     tolerance == 1000
